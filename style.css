@@ -1,0 +1,27 @@
+/* Here we are importing Font! Although we also can import css files as well */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html,body {
+    padding:0;
+    margin:0;
+    /* This removes padding and margin from html, in default html and body tags have some margin */
+    /* I added two fonts, why? cause in case if my first font fails to add, the second one will be added, kind of backup */
+    font-family: 'Open Sans', sans-serif; 
+
+}
+.homeScreen {
+    min-height:100vh;
+}
+/* ID means a unique name you give to a element, one id is only for a single tag! */
+#logo {
+    width: 400px;
+    /* I used only width, so height adjust according to image dimensions */
+}
+.CSS-intro {
+    min-height: 100vh;
+    /* This is shorthand for adding margin: top right bottom left or margin: top-bottom left-right, so in the below example first value goes for vertical and second for horizontal */
+    margin:10px 40px; 
+}
+.CSS-intro > p {
+    border: 2px solid grey;
+    padding: 10px;
+}
