@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Workshop 1</title>
+    <!--This is external CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* This is internal CSS */
+        /* Don't worry this is flexbox and will be taught in next class!! */
+        .homeScreen {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-image: url('dsc-logo.png');
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 55%;
+            background-size: 90%;
+
+        }
+        .headingContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #internal {
+            font-size: 30px;
+        }
+        .border {
+            margin: 10px 60px;
+            background-color: wheat;
+            padding: 10px 20px;
+        }
+        .block {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            margin-left: 100px;
+        }
+        @media screen and (max-width: 700px) {
+            .block {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="homeScreen">
+        <div class="headingContent">
+            <img id="logo" src="dsc.png" alt="">
+            <h1 style="font-weight: 400;margin-bottom: 5px;">Welcome Freshers</h1>
+            <!-- We can overwrite default CSS as well, so h1 by default has some margin okay, I'm gonna change it XD -->
+            <h3 style="font-weight: 400;margin-top: 0;">Web Baics 19.2</h3>
+        </div>
+    </div>
+    <div class="CSS-intro">
+        <h1>What is CSS??</h1>
+        <hr>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2] CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+        <h3>There are three ways to add CSS:</h3>
+        <ul>
+            <li style="color: red;font-weight:600">Inline</li>
+            <li id="external">External</li>
+            <li id="internal">Internal</li>
+        </ul>
+        <h4>Selectors:</h4>
+        <!-- We overwrote the css from external -->
+        <p style="border:0">The selector points to the HTML element you want to style. There are three main basic selectors, <code> #id,.class and tag </code></p>
+        <ul>
+            <li><b>ID</b>: This is kind of unique name you give to a element through which you can style, no two or more elements can have same id name!</li>
+            <li><b>Class</b>: This is basically a group name you give to bunch of elements, good for styling group of elements, like styled list or something! </li>
+            <li><b>Tag</b>: Basically styling a particular Tag, try to avoid as you might alter every tag in the webpage.</li>
+        </ul>
+        <hr style="background-color: red" size="24px">
+        <br>
+        <h3>Priorities:</h3>
+        <ul>
+            <li>
+                <span>ID > Class > Tag</span>
+            </li>
+            <li>
+                <span>Inline > Internal > External</span>
+            </li>
+        </ul>
+    </div>
+    <div class="m_p">
+        <h2>Margin and Padding</h2>
+        <hr>
+        <center>
+            <!-- This is one empty tag and now I'm gonna show power of css -->
+            <div class="wrapper">
+                <div class="content"></div>
+         </div>
+            
+        </center>
+        <p style="color:red;font-weight:600;font-size:46px;">Right Click and click Inspect Element now!</p>
+    </div>
+
+    <div class="border">
+        <h1>Borders</h1>
+        <p>Let's play around with border, they have several shorthands and properties and we request you to explore it on your own! </p>
+        <p style="border: 2px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <p style="border: 2px dotted black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <p style="border: 10px solid rgb(190, 76, 76)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <p style="border: 2px dashed black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <p style="border: 2px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <p style="border-style:solid;border-color: blue;border-width: 10px 20px 30px 40px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus error tempore, nesciunt consequatur dicta quam. Tempore recusandae repellendus neque assumenda officiis, aperiam veritatis adipisci suscipit soluta itaque voluptas harum voluptatem.</p>
+        <h5>For mixed widths or style you need to use different properties for width and style, shorthand won't work here!</h5>
+        <h2>Border Radius</h2>
+        <p style="border:3px solid black;border-radius:10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore eveniet possimus suscipit adipisci maxime autem voluptate, placeat ullam dicta quo quod debitis ad ducimus. Nemo optio nostrum doloremque? Repellendus.</p>
+        <p>You can use percent as well !</p>
+        <h1>Let's make a circle what say??</h1>
+    </div>  
+    <div class="media">
+        <h1>Media Queries</h1>
+        <p>Media Queries let us to change css according to screen dimension! We can make responsive webpages using this!</p>
+        <p>So, basically we can write css for different screen size, it has four parameters, <code>max-width,max-height,min-width,min-height</code></p>
+        <div class="block">
+        </div>
+        <h2>Real Life Example</h2>
+        <div class="noMedia"><button>Hi</button> <button>Freshers</button></div>
+        <div class="Media"><button>Hi</button> <button>Freshers</button></div>
+    </div>
+</body>
+</html>

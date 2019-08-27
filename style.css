@@ -17,11 +17,39 @@ html,body {
     /* I used only width, so height adjust according to image dimensions */
 }
 .CSS-intro {
-    min-height: 100vh;
     /* This is shorthand for adding margin: top right bottom left or margin: top-bottom left-right, so in the below example first value goes for vertical and second for horizontal */
     margin:10px 40px; 
 }
 .CSS-intro > p {
     border: 2px solid grey;
     padding: 10px;
+}
+#external {
+    font-weight: 300;
+    color: blue;
+
+}
+.m_p > center > .wrapper {
+    height: 400px;
+    background-color:grey;
+    width: 400px;
+    padding:40px;
+}
+.m_p > center > .wrapper > .content {
+    background-color:blue;
+    height: 100%;
+}
+/* Using tag as selector */
+code {
+    background-color: rgb(167, 160, 160);
+    padding: 5px;
+}
+button {
+    font-size: 36px;
+}
+
+@media screen and (max-width:600px) {
+    .Media > button {
+        display: block;
+    }
 }
