@@ -1,0 +1,18 @@
+body{
+	background-color: yellow;
+}
+.hello{
+	width: 200px;
+	height: 20px;
+	background-color: pink;
+}
+#division{
+		width: 200px;
+		height: 20px;
+	background-color: red;
+}
+input[type="text"]{
+	width: 200px;
+	height: 20px;
+	border-color: blue;
+}
