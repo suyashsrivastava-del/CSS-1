@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      body{
+        margin: 30px;
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+      .myFont{
+        font-family: 'Raleway', sans-serif;
+      }
+      .container{
+        background-color: green;
+        height: 100px;
+        width: 150px;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="box-shadows.css">
+    <meta charset="utf-8">
+    <title>Box Shadows</title>
+  </head>
+  <body bgcolor='#e0e0e0'>
+    <center><h1 style="font-family: 'Lexend Deca', sans-serif;"><u >Some Box Shadows</u></h1></center><br>
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>Simple Shadows:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>x= +40px and y= +20px</h3>
+            <div class="container" style='box-shadow: 40px 20px;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>x= -20px and y= -10px</h3>
+            <div class="container" style='box-shadow: -20px -10px;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <h3 class='myFont'>**Remember that in box shadows the first parameter denotes x-offset and second denotes y-offset</h3><br>
+      <hr color='black' size=2 width=100%>
+
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>With blur:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Blur: 20px</h3>
+            <div class="container" style='box-shadow: 20px 20px 20px;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 50px</h3>
+            <div class="container" style='box-shadow: 20px 20px 50px;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 100px</h3>
+            <div class="container" style='box-shadow: 20px 20px 100px;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>With Color:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Color: red</h3>
+            <div class="container" style='box-shadow: 40px 20px red;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Color: blue</h3>
+            <div class="container" style='box-shadow: 40px 20px blue;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Color: cyan</h3>
+            <div class="container" style='box-shadow:  40px 20px cyan;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>With Color and blur:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Color: red, Blur: 20px</h3>
+            <div class="container" style='box-shadow: 40px 20px 20px red;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Color: blue, Blur: 20px</h3>
+            <div class="container" style='box-shadow: 40px 20px 20px blue;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Color: cyan, Blur: 20px</h3>
+            <div class="container" style='box-shadow:  40px 20px 20px cyan;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>With Blur and spread:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Spread: 20px, Blur: 30px</h3>
+            <div class="container" style='box-shadow: 0px 0px 30px 20px red;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Spread: 20px, Blur: 30px</h3>
+            <div class="container" style='box-shadow: 5px 20px 30px 20px blue;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Spread: 20px, Blur: 30px</h3>
+            <div class="container" style='box-shadow:  -5px 10px 30px 20px cyan;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>Shadow inset:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Blur: 20px</h3>
+            <div class="container" style='box-shadow: inset 0px 0px 20px black;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 40px</h3>
+            <div class="container" style='box-shadow: inset 0px 0px 40px red;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 60px</h3>
+            <div class="container" style='box-shadow: inset 0px 0px 60px blue;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+      <table align=center cellpadding=40>
+        <caption><h2 class='myFont'>More than 1 shadow:</h2></caption>
+        <tr>
+          <td>
+            <h3 class='myFont'>Blur: 20px</h3>
+            <div class="container" style='box-shadow: 5px 10px 10px black, 15px 20px 10px red, -10px -5px 10px blue;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 40px</h3>
+            <div class="container" style='box-shadow: -15px 10px 10px yellow, 5px 20px 10px red, -10px -5px 10px magenta;'></div>
+          </td>
+          <td>
+            <h3 class='myFont'>Blur: 60px</h3>
+            <div class="container" style='box-shadow: 25px 10px 10px orange, 15px 20px 10px black, -10px -25px 10px blue;'></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr color='black' size=2 width=100%>
+
+  </body>
+</html>
