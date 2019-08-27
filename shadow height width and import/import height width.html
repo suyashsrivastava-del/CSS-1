@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- /* Always use import in the top of the style sheet or else it won't work */ -->
+
+    <style media="screen">
+      @import "https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Libre+Caslon+Display|Lobster|Pacifico|Righteous|Shadows+Into+Light|Source+Serif+Pro&display=swap";
+      body{
+        margin: 30px;
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+      .myFont{
+        font-family: 'Source Serif Pro', serif;
+        text-align:center;
+      }
+      .container{
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        padding:auto;
+        text-align:center;
+        background:red;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Importing fonts</title>
+  </head>
+  <body bgcolor='#e0e0e0'>
+      <center><h1 style="font-family: 'Source Serif Pro', serif;">Importing fonts from fonts.google.com</h1></center><br>
+      <ul type='circle'>
+        <li><h2 style="font-family: 'Lobster', cursive;">Lobster</h2></li>
+        <li><h2 style="font-family: 'Abril Fatface', cursive;">Abril Fatface</h2></li>
+        <li><h2 style="font-family: 'Pacifico', cursive;">Pacifico</h2></li>
+        <li><h2 style="font-family: 'Shadows Into Light', cursive;">Shadows Into Light</h2></li>
+        <li><h2 style="font-family: 'Source Serif Pro', serif;">Source Serif Pro</h2></li>
+        <li><h2 style="font-family: 'Righteous', cursive;">Righteous</h2></li>
+        <li><h2 style="font-family: 'Acme', sans-serif;">Acme</h2></li>
+        <li><h2 style="font-family: 'Libre Caslon Display', serif;">Libre Caslon Display</h2></li>
+        and many more...
+      </ul>
+      <hr size=2 color=black>
+      <center><h1 class='myFont'>Setting container dimensions</h1></center><br>
+      <table align=center cellpadding=20>
+        <tr>
+          <td>
+            <h4 class='myFont'>Height: 100px <br> Width: 150px</h4>
+            <div class="container" style="height:100px; width:150px;"><h3>Container 1</h3></div>
+          </td>
+          <td>
+            <h4 class='myFont'>Height: 150px <br>  Width: 200px</h4>
+            <div class="container" style="height:150px; width:200px;"><h3>Container 2</h3></div>
+          </td>
+          <td>
+            <h4 class='myFont'>Height: 75px <br>  Width: 250px</h4>
+            <div class="container" style="height:75px; width:250px;"><h3>Container 3</h3></div>
+          </td>
+        </tr>
+      </table>
+  </body>
+</html>
