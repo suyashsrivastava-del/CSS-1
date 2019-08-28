@@ -6,7 +6,7 @@
 
 <h4>CSS Workshop</h4>
 <center>
-<img src="https://smallimg.pngkey.com/png/small/141-1415392_css3-css-logo-transparent-background.png">
+<img src="https://smallimg.pngkey.com/png/small/141-1415392_css3-css-logo-transparent-background.png" width="150px" height="200px">
 </center>
 
 **How to use this material?**
