@@ -2,7 +2,7 @@
 <img src="https://developers.google.com/community/dsc/images/dsc_lockup.png">
 </center>
 
-# Web Basics 19.2
+# Welcome to WebDev Basics 19.2
 
 <h4>CSS Workshop</h4>
 <center>
@@ -23,6 +23,7 @@ Just, play around with website and read comments properly and check out each pro
  **Contributors**
   
  - Lakshya Khera
+ - Shreyansh Varshney
  - Shriyam
  - Suyash Singh
  
